@@ -1,8 +1,10 @@
 # Gold Price Forecasting with XGBoost
 
-Time series forecasting project on gold prices using XGBoost / Macroeconomics features / RMSE reduced 6.7% compared against Naive random walk on 180-day horizon / Interactive visualization (Plotly)
+Built a multi-horizon gold price forecasting model (1, 30, 180 days) using XGBoost with macroeconomic and technical indicators. The 180-day model achieved 90% directional accuracy and significantly outperformed Naive random walk benchmarks by 6.7%.
 
-## Overview
+(Interactive Plotly visualizations were used during development for analysis, and static exports were generated for reproducible GitHub documentation)
+
+> ## Overview
 
 This project forecasts gold prices using:
 
@@ -17,14 +19,14 @@ Data Source:
 
 ---
 
-## Hypothesis & Exploratory Analysis
+> ## Exploratory Analysis
 
 - STL decomposition performed
-- Annual seasonality detected: Feb peaks, decline toward June–July, August-September rebound, and Nov–Dec weakness
+- Weak to medium annual seasonality detected
 
 ---
 
-## Feature Engineering
+> ## Feature Engineering
 
 ### Technical Features
 - Lag features (1–365 days)
@@ -44,7 +46,7 @@ Data Source:
 
 ---
 
-## Modeling Approach
+> ## Modeling Approach
 
 Forecast return first, then convert to price:
 
@@ -63,7 +65,7 @@ Compared against:
 
 ---
 
-## Results
+> ## Results
 
 ### 180-Day Model
 - Return RMSE: **0.2065**
@@ -89,20 +91,12 @@ Compared against:
 
 ---
 
-## Key Findings
+> ## Key Findings
 
 - XGBoost significantly outperformed naive model for medium and long horizons
 - 180-day forecast shows strongest signal
-- Gold behaves partially like a random walk in short horizon
+- Gold exhibits strong "random walk with drift" characteristics, making it hard to forecast in short-term
 - Model tends to predict constant small positive return
-- The 180-day XGBoost model reduced prediction error by 6.7% relative to a naive random walk benchmark, indicating economically meaningful signal extraction.
+- The 180-day XGBoost model reduced prediction error by 6.7% relative to a naive random walk benchmark, indicating economically meaningful signal extraction
 
 ---
-
-## Limitations
-
-- Gold exhibits strong "random walk with drift" characteristics
-- Model forecasts conservative expected return
-
----
-
