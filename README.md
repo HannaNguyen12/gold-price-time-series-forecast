@@ -1,6 +1,8 @@
 # Gold Price Forecasting with XGBoost
 
-Built a multi-horizon gold price forecasting model (1, 30, 180 days) using XGBoost with macroeconomic and technical indicators. The 180-day model achieved 90% directional accuracy and significantly outperformed Naive random walk benchmarks by 6.7%. Interactive visualization (Plotly) available inside notebook.
+Built a multi-horizon gold price forecasting model (1, 30, 180 days) using XGBoost with macroeconomic and technical indicators. The 180-day model achieved 90% directional accuracy and significantly outperformed Naive random walk benchmarks by 6.7%.
+
+(Interactive Plotly visualizations were used during development for analysis, and static exports were generated for reproducible GitHub documentation)
 
 > ## Overview
 
