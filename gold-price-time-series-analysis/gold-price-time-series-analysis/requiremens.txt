@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+plotly
+scikit-learn
+xgboost
+prophet
+yfinance
+fredapi
+statsmodels
+tensorflow
+scipy
