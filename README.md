@@ -1,4 +1,4 @@
-# Gold Price Forecasting with XGBoost
+# Gold Price Time-Series Forecasting with XGBoost
 
 ``` Built a multi-horizon gold price forecasting model (1, 30, 180 days) using XGBoost with macroeconomic and technical indicators. The 180-day model achieved 90% directional accuracy and significantly outperformed Naive random walk benchmarks by 6.7%. ```
 
