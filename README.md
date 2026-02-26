@@ -90,6 +90,9 @@ Compared against:
 - RMSE: 684.43
 - Failed to capture recent structural surge
 
+![My Chart](gold-price-time-series-analysis/180_day_ahead_forecast.png)
+![My Chart](gold-price-time-series-analysis/30_day_ahead_forecast.png)
+
 ---
 
 > ## Key Findings
